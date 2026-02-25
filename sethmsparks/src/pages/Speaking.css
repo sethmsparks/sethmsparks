@@ -1,0 +1,118 @@
+.speaking__ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.speaking__section-title {
+  font-size: 36px;
+  color: var(--text);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.speaking__audiences {
+  margin-bottom: 0;
+}
+
+.speaking__audience-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.speaking__audience-pill {
+  font-size: 13px;
+  color: var(--text2);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+}
+
+.speaking__talks {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border);
+}
+
+.speaking__talk {
+  padding: 36px 32px;
+  border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
+}
+
+.speaking__talk:last-child {
+  border-bottom: none;
+}
+
+.speaking__talk:hover {
+  background: var(--bg2);
+}
+
+.speaking__talk-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.speaking__talk-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.speaking__tag {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(200, 149, 90, 0.1);
+  padding: 3px 10px;
+}
+
+.speaking__length {
+  font-size: 12px;
+  color: var(--text3);
+  white-space: nowrap;
+}
+
+.speaking__talk h3 {
+  font-size: 24px;
+  color: var(--text);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.speaking__talk p {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.speaking__formats {
+  display: flex;
+  gap: 8px;
+}
+
+.speaking__format {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text3);
+  border: 1px solid var(--border);
+  padding: 3px 10px;
+}
+
+.speaking__booking h2 {
+  font-size: 40px;
+  color: var(--text);
+  font-weight: 300;
+  margin: 8px 0 16px;
+}
+
+.speaking__booking p {
+  font-size: 16px;
+}

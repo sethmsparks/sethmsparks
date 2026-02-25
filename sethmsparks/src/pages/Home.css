@@ -1,0 +1,141 @@
+.home__hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: var(--nav-h);
+  overflow: hidden;
+}
+
+.home__hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 60% at 80% 40%, rgba(200, 149, 90, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.home__eyebrow {
+  margin-bottom: 24px;
+}
+
+.home__name {
+  font-family: var(--font-display);
+  font-size: clamp(72px, 14vw, 160px);
+  font-weight: 300;
+  line-height: 0.92;
+  color: var(--text);
+  margin-bottom: 36px;
+  letter-spacing: -0.02em;
+}
+
+.home__tagline {
+  font-size: clamp(16px, 2vw, 20px);
+  color: var(--text2);
+  max-width: 46ch;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.home__ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.home__hero-decoration {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.home__hero-decoration span {
+  font-family: var(--font-display);
+  font-size: clamp(60px, 9vw, 120px);
+  font-weight: 300;
+  color: rgba(200, 149, 90, 0.06);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  display: block;
+}
+
+/* Highlights */
+.home__highlights {
+  padding: 0 0 120px;
+}
+
+.home__highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.home__highlight-card {
+  background: var(--bg);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: background var(--transition);
+  text-decoration: none;
+}
+
+.home__highlight-card:hover {
+  background: var(--bg2);
+}
+
+.home__highlight-card p {
+  font-size: 14px;
+  color: var(--text2);
+  max-width: none;
+  flex: 1;
+}
+
+.home__card-cta {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Bio */
+.home__bio {
+  border-top: 1px solid var(--border);
+  padding: 120px 0;
+  background: var(--bg2);
+}
+
+.home__bio-inner {
+  max-width: var(--max-w);
+}
+
+.home__bio-text h2 {
+  font-size: clamp(32px, 5vw, 56px);
+  color: var(--text);
+  margin: 12px 0 20px;
+  font-weight: 300;
+}
+
+.home__bio-text p {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .home__highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home__hero-decoration {
+    display: none;
+  }
+}
